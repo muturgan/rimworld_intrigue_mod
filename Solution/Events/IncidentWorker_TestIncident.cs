@@ -13,11 +13,12 @@ namespace Intrigue.Events
         {
             Map map = (Map)parms.target;
 
-            if (map.mapPawns.ColonistsSpawnedCount < 2) {
-                Log.Message($"no no {map.mapPawns.ColonistsSpawnedCount}");
+            if (map.mapPawns.ColonistsSpawnedCount < 2)
+            {
+                Log.Message($"no {map.mapPawns.ColonistsSpawnedCount}");
                 return false;
             }
-            Log.Message($"yes yes {map.mapPawns.ColonistsSpawnedCount}");
+            Log.Message($"yes {map.mapPawns.ColonistsSpawnedCount}");
 
             return true;
             // return base.CanFireNowSub(parms);
@@ -29,10 +30,10 @@ namespace Intrigue.Events
 
             if (map.mapPawns.ColonistsSpawnedCount < 2)
             {
-                Log.Message($"no no no {map.mapPawns.ColonistsSpawnedCount}");
+                Log.Message($"no no {map.mapPawns.ColonistsSpawnedCount}");
                 return false;
             }
-            Log.Message($"yes yes yes {map.mapPawns.ColonistsSpawnedCount}");
+            Log.Message($"yes yes {map.mapPawns.ColonistsSpawnedCount}");
 
             // return base.TryExecuteWorker(parms);
             return true;
